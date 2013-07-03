@@ -35,11 +35,11 @@ class nginx::params {
 
   $nx_client_body_temp_path   = "${nx_run_dir}/client_body_temp"
   $nx_client_body_buffer_size = '128k'
-  $nx_client_max_body_size    = '10m'
+  $nx_client_max_body_size    = '50m'
   $nx_proxy_temp_path         = "${nx_run_dir}/proxy_temp"
-  $nx_proxy_connect_timeout   = '90'
+  $nx_proxy_connect_timeout   = '30'
   $nx_proxy_send_timeout      = '90'
-  $nx_proxy_read_timeout      = '90'
+  $nx_proxy_read_timeout      = '60'
   $nx_proxy_buffers           = '32 4k'
 
   $nx_logdir = $::kernel ? {
