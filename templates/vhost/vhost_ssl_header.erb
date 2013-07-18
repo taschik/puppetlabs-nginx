@@ -17,5 +17,5 @@ server {
   ssl_session_cache           shared:SSL:10m;
 
   add_header                  Strict-Transport-Security "max-age=16070400; includeSubdomains";
-  add_header                  X-Frame-Options DENY;
+  add_header                  X-Frame-Options SAMEORIGIN;
   
